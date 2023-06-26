@@ -40,7 +40,7 @@ h1 {
 
 button {
   height: 60px;
-  font-size: 2rem!important;
+  font-size: 2rem !important;
   padding: 15px;
   display: flex;
   align-items: center;
@@ -60,28 +60,31 @@ button {
   width: 100%;
 }
 
-
-
 /* Media Queries */
 @media (max-width: 768px) {
   .calculator-keys {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 480px) {
+  .calculator {
+    width: 320px;
+  }
+
   .calculator-keys {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
   }
 
   .btn-lg {
-    padding: 15px;
     font-size: 18px;
+    padding: 10px;
   }
 
   .calculate {
-    padding: 15px;
+    padding: 10px;
     font-size: 18px;
-    text-align:justify;
+    text-align: justify;
   }
 }
